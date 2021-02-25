@@ -13,7 +13,7 @@ function getRows() {
 				for (var propt in row) {
 					if (row[propt] === '?')
 						row[propt] = -1;
-					else if (propt === 'DT-T')
+					else if (propt === 'DT_T')
 						continue;
 					else
 						row[propt] = parseFloat(row[propt]);

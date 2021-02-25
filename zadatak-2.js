@@ -27,7 +27,7 @@ async function run() {
 			headerCounter++;
 		}
 
-		// await connection.db("projekt").collection("statistika_water_treatment").insertMany([map]);
+		await connection.db("projekt").collection("statistika_water_treatment").insertMany([map]);
 		console.log(map);
 	} catch (e) {
 		console.error(e);
