@@ -38,11 +38,8 @@ async function run() {
                     biggerThanAvg[header].push(number);
             }
         }
-        console.log(smallerThanAvg);
         await connection.db("projekt").collection("statistika1_water_treatment").insertMany([smallerThanAvg]);
         await connection.db("projekt").collection("statistika2_water_treatment").insertMany([biggerThanAvg]);
-        console.log(biggerThanAvg);
-        console.log("kraj");
 	} catch (e) {
 		console.error(e);
 	} finally {
